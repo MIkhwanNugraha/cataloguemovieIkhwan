@@ -2,12 +2,20 @@ package com.dicoding.associate.latihan3;
 
 public class latihansaurangan {
 
+    String cuti = "reject";
+
     public static void main (String [] args){
         latihansaurangan adin = new latihansaurangan();
-        adin.berjalan();
+        adin.setCuti("disetujui");
+        String hasilnya = adin.getCuti();
+
     }
 
-    void berjalan(){
-        System.out.println("makan");
+    void setCuti( String cuti){
+        this.cuti=cuti;
+    }
+
+    String getCuti(){
+     return cuti;
     }
 }
